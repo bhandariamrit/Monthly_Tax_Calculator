@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h2>Monthly Tax Calculator</h2>
+      <form>
+        <label for="mincome">Monthly Income:</label>
+        <input
+          type="number"
+          id="monthly_income"
+          placeholder="gross salary"
+        /><br /><br />
+        <label for="month">Month:</label>
+        <input type="number" name="month" id="total_month" value="12"
+        /readonly><br /><br />
+        <label for="yearlyincome">Yearly Income:</label>
+        <input type="number" name="yearlyincome" id="yearly_income"
+        /readonly><br /><br />
+        <label for="yearlytax">Net Tax Liability (Yearly):</label>
+        <input type="number" id="yearly_tax" /readonly><br><br>
+        <label for="mthtax">Net Tax Liability (Monthly):</label>
+        <input type="number" id="monthly_tax" /readonly><br><br>
+      </form>
+      <button type="submit" id="btn" >Submit</button>
+      <button type="reset" id="clear">clear</button>
+    </div>
+
+    <script src="index.js" async defer></script>
+  </body>
+</html>
+
