@@ -18,6 +18,7 @@ reset.addEventListener("click", function () {
   let monthlyIncome = (document.getElementById("monthly_income").value = "");
   let yearlyIncome = (document.getElementById("yearly_income").value = "");
   let getYearlyTax = (document.getElementById("yearly_tax").value = "");
+  let monthlyTax = (document.getElementById("monthly_tax").value = "");
 });
 
 function getYearlyTax(yearlyIncome) {
