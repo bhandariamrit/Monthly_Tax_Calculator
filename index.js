@@ -1,16 +1,18 @@
 let btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
-  let monthlyIncome = document.getElementById("monthly_income").value;
+  let monthlyIncome = document.getElementById("monthly_income").value; //monthly income
 
-  let yearlyIncome = (document.getElementById("yearly_income").value =
+  let yearlyIncome = (document.getElementById("yearly_income").value = //yearly income
     monthlyIncome * 12);
-
-  let monthlyTax = (document.getElementById("monthly_tax").value =
-    getYearlyTax(yearlyIncome) / 12);
-
   let yearlyTax = (document.getElementById("yearly_tax").value = getYearlyTax(
     yearlyIncome
   ));
+
+  let monthlyTax = (document.getElementById("monthly_tax").value =
+    getYearlyTax(yearlyIncome) / 12); //monthly tax
+
+  let cashInHand = (document.getElementById("monthly_salary").value =
+    monthlyIncome - monthlyTax);
 });
 
 let reset = document.getElementById("reset");
