@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <h2>Monthly Tax Calculator</h2>
-      <form>
-        <div id="employeeType">
-          <p>Please select your employee type:</p>
-          <input
-            type="radio"
-            id="nature_employee"
-            name="gender"
-            value="Married"
-          />
-          <label for="male">Married</label><br />
-          <input
-            type="radio"
-            id="nature_employee"
-            name="gender"
-            value="Unmarried"
-          />
-          <label for="female">Unmarried</label><br /><br />
-        </div>
-        <label for="mincome">Monthly Income:</label>
-        <input
-          type="number"
-          class="input-styling"
-          id="monthly_income"
-          placeholder="Enter Gross Salary Here"
-        /><br /><br />
-        <label for="month">No of Months:</label>
-        <input type="number"class="input-styling" name="month" id="total_month"
-        value="12" /readonly><br /><br />
-        <label for="yearlyincome">Yearly Income:</label>
-        <input type="number"class="input-styling" name="yearlyincome"
-        id="yearly_income" /readonly><br /><br />
-        <label for="yearlytax">Net Tax Liability (Yearly):</label>
-        <input type="number" class="input-styling" id="yearly_tax" /readonly><br /><br />
-        <label for="mthtax">Net Tax Liability (Monthly):</label>
-        <input type="number" class="input-styling" id="monthly_tax"
-        /readonly><br /><br />
-        <label for="mthsalary">Monthly Cash In Hand</label>
-        <input type="number" id="monthly_salary" class="input-styling"
-        /readonly><br /><br />
-        <button type="button" id="btn">Submit</button>
-        <button type="reset" id="reset">Reset</button>
-      </form>
-    </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h2>Monthly Tax Calculator</h2>
+			<form>
+				<div id="employeeType">
+					<p>Please select your employee type:</p>
+					<input type="radio" id="married" name="gender" value="Married" />
+					<label for="male">Married</label><br />
+					<input type="radio" id="Unmarried" name="gender" value="Unmarried" />
+					<label for="female">Unmarried</label><br /><br />
+				</div>
+				<label for="mincome">Monthly Income:</label>
+				<input
+					type="number"
+					class="monthlyIncome"
+					id="monthly_income"
+					placeholder="Enter Gross Salary Here"
+				/><br /><br />
+				<label for="month">No of Months:</label>
+				<input type="number"class="totalMonth" name="month" id="total_month"
+				value="12" /readonly><br /><br />
+				<label for="yearlyincome">Yearly Income:</label>
+				<input type="number"class="yearlyIncome" name="yearlyincome"
+				id="yearly_income" /readonly><br /><br />
+				<label for="yearlytax">Net Tax Liability (Yearly):</label>
+				<input type="number" class="yearlyTax" id="yearly_tax" /readonly><br /><br />
+				<label for="mthtax">Net Tax Liability (Monthly):</label>
+				<input type="number" class="monthlyTax" id="monthly_tax"
+				/readonly><br /><br />
+				<label for="mthsalary">Monthly Cash In Hand</label>
+				<input type="number" id="monthly_salary" class="monthlySalary"
+				/readonly><br /><br />
+				<button type="button" id="btn">Submit</button>
+				<button type="reset" id="reset">Reset</button>
+			</form>
+		</div>
 
-    <script src="index.js" async defer></script>
-  </body>
+		<script src="index.js" async defer></script>
+	</body>
 </html>
